@@ -70,8 +70,8 @@ class GamesTab extends Component {
                   key={index}
                   onClick={() => this.showModal(game)}
                 >
-                  <h1 className="name">{game.status}</h1>
-                  <p className="date-info">{getFancyDate(game.date)}</p>
+                  <h1 className="name"style={{fontSize:'25px'}}>{getFancyDate(game.date)}</h1>
+                  <p className="date-info">{game.status}</p>
                 </div>
               );
             })}
